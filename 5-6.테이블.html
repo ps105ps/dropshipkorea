@@ -3,22 +3,31 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>테이블</title>
+        <title>Table & Form</title>
     </head>
     <body>
-        <h1>테이블 만들기</h1>
+        <h1>테이블</h1>
         테이블을 만들어 보세요.
         <table border="3">
-            <tr>
-                <td>이름</td> <td>성별</td> <td>주소</td>
-            </tr>
-            <tr>
-                <td>terry</td> <td>male</td> <td>시흥</td>
-            <tr>
-                <td>Andrew</td> <td>male</td> <td>서울</td>
-            </tr>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Name</th> <th>Sex</th> <th>Address</th> <th>Memvership fee</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>terry</td> <td>male</td> <td rowspan="2">서울</td> <td>50,000</td>
+                <tr>
+                    <td>Andrew</td> <td>male</td> <td>30,000</td>
+                </tr>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">합계</td> <td>80,000</td>
+                </tr>
+            </tfoot>
         </table>
-
+        
     </body>
 </html>
