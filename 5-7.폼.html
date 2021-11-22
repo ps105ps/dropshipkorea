@@ -9,11 +9,58 @@
         <form action="http://localhost.login.php">
             <h1>폼(Form)</h1>
             폼을 만들어 보세요.
-            <p>아이디<input type="text" name="id" value=""></p>
-            <p>비밀번호<input type="password" name="pw" value=""><p>
-            <p>주소<input type="text" name="adress" value=""></P>
+                <p>아이디<input type="text" name="id" value=""></p>
+                <p>비밀번호<input type="password" name="pw" value=""><p>
+                <p>주소<input type="text" name="adress" value=""></P>
             <input type="submit">
         </form>
+        <form action="">
+            <h2>폼 문자입렵</h2>
+                <p>text : <input type="text" name="id" value="default value"></p>
+                <p>password : <input type="password" name="password" value="default"></input></p>
+                <p>textarea :
+                    <textarea cols="50" rows="5">default value</textarea>
+            </p>
+        </form>
+        <form action="http://localhost/color.php">
+            <h2>폼 Dropdown list</h2>
+                <select name="color">
+                    <option value="red">빨강</option>
+                    <option value="black">검정</option>
+                    <option value="blue">파랑</option>
+                </select>
+            <h2>Dropdown list 다중선택</h2>
+                <select name="color2" multiple>
+                    <option value="red">빨강</option>
+                    <option value="black">검정</option>
+                    <option value="blue">파랑</option>
+                    <option value="yellow">노랑</option>
+                </select>
+            <input type="submit">
+        </form>
+        <form action="http://localhost/order.php">
+            <h2>Radio & Checkbox</h2>
+            <p>
+                <h3>Color<h3>
+                    Red : <input type="radio" name="color" value="red">
+                    Black : <input type="radio" name="color" value="black" checked>
+                    Blue : <input type="radio" name="color" value="blue">
+            </P>
+            <p>
+                <h3>Size<h3>
+                    Small : <input type="radio" name="size" value="90">
+                    Medium : <input type="radio" name="size" value="95" checked>
+                    Large : <input type="radio" name="size" value="100">
+            </P>
+            <p>
+                <h3>Option(checkbox)</h3>
+                    1+1: <input type="checkbox" name="option" value="1" checked>
+                    2+3 : <input type="checkbox" name="option" value="2">
+                    3+4 : <input type="checkbox" name="option" value="3">
+            </p>
+            <input type="submit">
+        </form>
+
 
     </body>
 </html>
