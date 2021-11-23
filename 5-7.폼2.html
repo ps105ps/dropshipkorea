@@ -9,9 +9,9 @@
         <h1>FORM_2</h1>
             <form action="http://localhost/form.php">
                 <h2>Button</h2>
-                <input type="text">
+                <input type="text" id="input_test" name="input_test">
                 <input type="submit" value="send">
-                <input type="button" value="button" onclick="alert('HELLO WORLD')">
+                <input type="button" value="button" onclick="test(input_test)">
                 <input type="reset">
             </form>
             <form action="http://localhost/hidden.php">
@@ -53,5 +53,11 @@
                 <input type="password" name="password">
                 <input type="submit">
             </form>
+            <script>
+                function test(_this)
+                {
+                    alert(_this.value)
+                }
+            </script>
         </body>
 </html>
